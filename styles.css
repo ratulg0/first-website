@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #4B0082; /* Purple */
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    animation: rainbowShadow 5s infinite linear;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    color: #f2f461;
+}
+
+/* Home Content */
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about-section {
+    width: 45%;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Page Layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    width: 45%;
+    padding: 10px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form {
+    width: 45%;
+    padding: 20px;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(200, 171, 254));
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #f1f0f0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Vibrant Rainbow Shadow Animation */
+@keyframes rainbowShadow {
+    0% {
+        box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8);
+    }
+
+    14% {
+        box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8);
+    }
+
+    28% {
+        box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8);
+    }
+
+    42% {
+        box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8);
+    }
+
+    56% {
+        box-shadow: 0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8);
+    }
+
+    70% {
+        box-shadow: 0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8);
+    }
+
+    84% {
+        box-shadow: 0px 4px 15px rgba(250, 79, 250, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8);
+    }
+
+    100% {
+        box-shadow: 0px 4px 15px rgba(255, 91, 255, 0.8),
+                    0px 4px 15px rgba(75, 0, 130, 0.8),
+                    0px 4px 15px rgba(0, 0, 255, 0.8),
+                    0px 4px 15px rgba(0, 255, 0, 0.8),
+                    0px 4px 15px rgba(255, 255, 0, 0.8),
+                    0px 4px 15px rgba(255, 165, 0, 0.8),
+                    0px 4px 15px rgba(255, 0, 0, 0.8);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    /* Navbar becomes stacked */
+    nav ul {
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Home Content becomes stacked */
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section, .image-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        padding: 0 20px;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .iframediv{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .contact-info, .contact-form {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+        display: inline-block;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .home-content {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .iframediv{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* For screens smaller than 480px (mobile) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        font-size: small;
+        display: inline-block;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .home-content {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .about-section {
+        padding: 0 10px;
+    }
+
+    .iframediv{
+        width: 100%;
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+    }
+}
